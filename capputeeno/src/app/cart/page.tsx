@@ -1,6 +1,7 @@
 "use client"
 
 import { BackBtn } from "@/components/back-button";
+import { CartItem } from "@/components/cart/cart-item";
 import { DefaultPageLayout } from "@/components/default-page-layout";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { Product, ProductInCart } from "@/types/products";
@@ -43,7 +44,7 @@ const CartListContainer = styled.div`
     }
 `
 
-const CartList = styled.div`
+const CartList = styled.ul`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,14 +54,26 @@ const CartList = styled.div`
 `
 
 
+
 export default function cartPage (){
-    const { value } =  useLocalStorage<ProductInCart[]>('cart-items', [])
+    const { value, updateLocalStorage } =  useLocalStorage<ProductInCart[]>('cart-items', [])
 
     const calculateTotal = (value : ProductInCart[]) => {
         return value.reduce((sum, item) => sum += (item.price_in_cents * item.quantity), 0)
      }
 
     const cartTotal = formatPrice(calculateTotal(value))
+
+    const handleUpdateQuantity = (id: string, quantity: number) => {
+        const newValue = value.map(item => {
+            if(item.id != id) return item
+            return {...item, quantity: quantity}
+        })
+        console.log(newValue)
+        updateLocalStorage(newValue)
+
+    }
+    
     return(
         <DefaultPageLayout>
             <Container>
@@ -72,7 +85,13 @@ export default function cartPage (){
                         <span> {cartTotal}</span>   
                     </p>
                     <CartList>
-                        {value.map(item => item.name)}
+                        {value.map(item =>
+                            <CartItem
+                            product={item}
+                            key={item.id}
+                            handleUpdateQuantity={handleUpdateQuantity}
+                            />
+                        )}
                     </CartList>
                 </CartListContainer>
             </Container>
