@@ -45,8 +45,7 @@ e digite
   ```bash
 npm run dev
 ```
-Isso irá inicializar um servidor local e você poderá ver e testar a aplicação
-Para visualizar o site basta acessar o seguinte endereço no seu navegador 
+Isso irá inicializar um servidor local e você poderá ver e testar a aplicação e para visualizar o site basta acessar o seguinte endereço no seu navegador 
   ```bash
 http://localhost:5173
 ```
