@@ -4,7 +4,7 @@ O tema é sobre uma loja virtual fictícia que vende vestimentas e acessórios.
 
 Todos os dados de todos os itens são obtidos através de uma API utilizando **GraphQL**
 
-Se você deseja testar ou ver o projeto siga estes passos:
+O site ainda não está no ar, mas se você deseja testar ou ver o projeto siga estes passos:
 
 ## Pré-requisitos
 
