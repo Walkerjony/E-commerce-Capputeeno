@@ -6,14 +6,50 @@ Todos os dados de todos os itens são obtidos através de uma API utilizando **G
 
 Se você deseja testar ou ver o projeto siga estes passos:
 
-1. Clone o projeto 
+## Pré-requisitos
 
-2. Ao abrir o projeto digite "**npm install**" no terminal ou prompt de comando para instalar as depedendências do projeto.
+- Node.js
+- npm (Node Package Manager)
 
-3. Navegue até a pasta API, abra o terminal e digite "**npm start**". Sem isso não será possível ver os produtos nas telas
+## 1. Clone o projeto 
 
-4. Navegue até a pasta capputeeno/capputeeno e digite "**npm run dev**" no terminal e será iniciado um servidor local no qual você poderá visualizar o site.
+  ```bash
+  git clone https://github.com/Walkerjony/E-commerce-Capputeeno.git
+```
+## 2. Abra o terminal ou prompt de comando e baixe as dependências do projeto
 
+  ```bash
+  npm install
+  ```
+
+## 3. Navegue até a pasta API
+
+  ```bash
+  cd api
+```
+
+e digite
+
+  ```bash
+  npm start
+```
+Isso irá inicializar a API e então será possível ver os produtos retornados por ela na aplicação
+
+## 4. Por ultimo Navegue até a pasta capputeeno
+  ```bash
+  cd capputeeno/capputeeno
+```
+
+e digite
+
+  ```bash
+npm run dev
+```
+Isso irá inicializar um servidor local e você poderá ver e testar a aplicação
+Para visualizar o site basta acessar o seguinte endereço no seu navegador 
+  ```bash
+http://localhost:5173
+```
 
 ![home](https://github.com/Walkerjony/E-commerce-Capputeeno/assets/55608271/df5bcb77-4ef6-40be-a4c9-5bcfcd88191f)
 
