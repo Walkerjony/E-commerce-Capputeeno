@@ -47,7 +47,7 @@ npm run dev
 ```
 Isso irá inicializar um servidor local e você poderá ver e testar a aplicação e para visualizar o site basta acessar o seguinte endereço no seu navegador 
   ```bash
-http://localhost:5173
+http://localhost:3000
 ```
 
 ![home](https://github.com/Walkerjony/E-commerce-Capputeeno/assets/55608271/df5bcb77-4ef6-40be-a4c9-5bcfcd88191f)
