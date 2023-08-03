@@ -1,6 +1,6 @@
 Este é um projeto criado em **ReactJS, NextJS, TypeScript e GraphQL**. 
 
-O tema é sobre uma loja virtual que vende vestimentas e acessórios.
+O tema é sobre uma loja virtual fictícia que vende vestimentas e acessórios.
 
 Todos os dados de todos os itens são obtidos através de uma API utilizando **GraphQL**
 
